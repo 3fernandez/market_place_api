@@ -1,7 +1,9 @@
 MarketPlaceApi::Application.routes.draw do
   # Api definition
   namespace :api, defaults: { format: :json }, constraints: { subdomain: 'api' }, path: '/' do
-    # we're going to list our resources here
+    scope module: :v1 do
+      # we're going to list our resources here
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
