@@ -1,4 +1,9 @@
-MarketPlaceApi.application.routes.draw do
+MarketPlaceApi::Application.routes.draw do
+  # Api definition
+  namespace :api, defaults: { format: :json }, constraints: { subdomain: 'api' }, path: '/' do
+    # we're going to list our resources here
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
