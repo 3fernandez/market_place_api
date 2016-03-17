@@ -26,7 +26,7 @@ gem 'devise'
 
 # Needed for sabisu gem integration
 gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
-gem 'compass-rails'
+gem 'compass-rails', '~> 2.0.2'
 gem 'furatto'
 gem 'font-awesome-rails'
 gem 'simple_form'
