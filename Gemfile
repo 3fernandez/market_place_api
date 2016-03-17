@@ -51,6 +51,8 @@ group :development, :test do
 end
 
 group :development do
+  # Annotates Rails/ActiveRecord Models, Routes and others based on the database schema
+  gem 'annotate'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   # Access an IRB console on exception pages or by using <%= console %> in views
