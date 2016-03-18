@@ -21,7 +21,7 @@ gem 'jquery-rails'
 # gem 'jbuilder', '~> 2.0'
 
 # Api gems
-gem 'active_model_serializers'
+gem 'active_model_serializers', '~> 0.8.1'
 gem 'devise'
 
 # Needed for sabisu gem integration
