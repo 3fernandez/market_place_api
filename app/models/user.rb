@@ -24,11 +24,12 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  has_many :products, dependent: :destroy
+  has_many :orders, dependent: :destroy
+
   validates :auth_token, uniqueness: true
 
   before_create :generate_authentication_token!
-
-  has_many :products, dependent: :destroy
 
   def generate_authentication_token!
     begin
