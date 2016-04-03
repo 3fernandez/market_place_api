@@ -41,7 +41,9 @@ RSpec.describe Api::V1::ProductsController, type: :controller do
           expect(product_response[:user]).to be_present
         end
       end
-    
+
+      it_behaves_like "paginated list"
+
       it { should respond_with 200 }
     end
 
